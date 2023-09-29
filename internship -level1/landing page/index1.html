@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./style.css">
+
+<script>
+
+
+// jquery   //
+     $(document).on('scroll',function(){
+             if($(document).scrollTop()){
+                 $(".navbar").css({"background":"#323232","transition":"all linear .20s","height":"80px"});
+                 $(".nav-link").css({"color":"white"});
+             }
+             else{
+                 $(".navbar").css({"height":"15vh","margin":"0","background":"linear-gradient(90deg,rgba(93, 152, 245,0.5) 15%,rgba(93, 152, 245,0.7 ) 50%,rgba(93, 152, 245,1) 100%)","transition":"all linear .10s"});
+             }
+         });
+         $(document).ready(function(){
+$(".fa-bars").click(function(){
+$(".help-container").css({"right":"0","transition":".20s all linear"});
+// $("body").css(                    )
+});
+$("#close-btn").click(function(){
+$(".help-container").css({"right":"-20%","transition":".20s all linear"});
+});
+$(".j-image-container-1").mouseover(function(){
+  $(this).css("border","2px solid blue");
+  $(".j-image-sub-container-1").css({"left":"55px","transition":".20s all linear" });
+});
+$(".j-image-container-1").mouseout(function(){
+  $(this).css("border","2px solid gray");
+  $(".j-image-sub-container-1").css({"left":"-74px","transition":".20s all linear" });
+});
+$(".j-image-container-2").mouseover(function(){
+  $(this).css("border","2px solid blue");
+  $(".j-image-sub-container-2").css({"left":"55px","transition":".20s all linear" });
+});
+$(".j-image-container-2").mouseout(function(){
+  $(this).css("border","2px solid gray");
+  $(".j-image-sub-container-2").css({"left":"-74px","transition":".20s all linear" });
+});
+$(".j-image-container-3").mouseover(function(){
+  $(this).css("border","2px solid blue");
+  $(".j-image-sub-container-3").css({"left":"55px","transition":".20s all linear" });
+});
+$(".j-image-container-3").mouseout(function(){
+  $(this).css("border","2px solid gray");
+  $(".j-image-sub-container-3").css({"left":"-74px","transition":".20s all linear" });
+});
+$(".j-image-container-4").mouseover(function(){
+  $(this).css("border","2px solid blue");
+  $(".j-image-sub-container-4").css({"left":"55px","transition":".20s all linear" });
+});
+$(".j-image-container-4").mouseout(function(){
+  $(this).css("border","2px solid gray");
+  $(".j-image-sub-container-4").css({"left":"-74px","transition":".20s all linear" });
+});
+         });
+</script>
+
+
+</head>
+<body>
+  <div class="help">
+  <div class="help-container">
+<button id="close-btn">X</button>
+<div class="form-container">
+<p id="message"> Leave your message</p>
+<form method="post" action="">
+  <input type="text"  class="m-name"placeholder="your name" name="t1" required>
+  <input type="email" class="m-name" placeholder="your email-id" name="email" required>
+  <textarea cols="20" rows="5" name="area" class="m-textarea"placeholder="your message" required></textarea>
+  <input type="submit" class="m-btn" value="submit" name="submit">
+</form>
+</div>
+  </div>
+</div>
+    <div class="navbar1">
+    <nav class="navbar navbar-expand-md border-bottom border-white  ">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="img/logo.png" style="width:90px; height:80px"></a>
+      
+        <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon "></span>
+        </button>
+      
+        <!-- Navbar links -->
+        <div class="collapse navbar-collapse " id="collapsibleNavbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item " style="background:red;  border-radius:5px;">
+              <a class="nav-link " style="color:white" href="#">Home</a>
+            </li>
+           
+            <li class="nav-item">
+                <a class="nav-link"  style="color:white" href="index.php">Student Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color:white" href="admin/index.php">Admin Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  style="color:white" href="registered.php">Interested?Register</a>
+              </li>
+            <li class="nav-item">
+              <i class="fa fa-bars help-icon" aria-hidden="true"></i> 
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+      <div class="caption">
+          <h1>Knowledge is power.Always Test It</h1>
+          <p>Either you win or you learn, Never defeat.</p>
+          <div class="parent-features-container">
+            
+          <div class="feature-container">
+            <div class="icon-container">
+              <i class="fa fa-shield" aria-hidden="true"></i>
+            </div>
+            <div class="text-container">
+<p>Multiple Courses</p>
+            </div>
+          </div>
+          <div class="feature-container">
+            <div class="icon-container">
+              <i class="fa fa-users" aria-hidden="true"></i>
+            </div>
+            <div class="text-container">
+<p>Qualified Teachers</p>
+            </div>
+          </div>
+        
+          <div class="feature-container">
+            <div class="icon-container">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+            </div>
+            <div class="text-container">
+<p>Best Evaluation</p>
+            </div>
+          </div>
+          <div class="feature-container">
+            <div class="icon-container">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+            </div>
+            <div class="text-container">
+<p>Best Coordination</p>
+            </div>
+          </div>
+          </div>
+          <div class="sign-up">
+         <button id="sign-btn"> <a href="index.php">Sign In</a></button>
+        </div>
+      </div>
+      
+      <div class="another">
+<p class="working-header">How we works?</p>
+<div class="slider-container">
+  <div class="working-step"><div class="arrow">------></div>
+  <div class="img-container j-image-container-1">
+    <div class="img-sub-container j-image-sub-container-1">
+    <img class="image1" src="img/chat-blue.png" >
+    <img class="image2" src="img/chat (2).png">
+    </div>
+  </div>
+  <div class="image-about">
+    <p >Registered Yourself</p>
+    </div>
+    </div>
+    <div class="working-step"><div class="arrow">------></div>
+  <div class="img-container j-image-container-2">
+    <div class="img-sub-container j-image-sub-container-2">
+    <img class="image1" src="img/assignment-blue.png" >
+    <img class="image2" src="img/assignment (1).png">
+    </div>
+  </div>
+  <div class="image-about">
+    <p >Give Exams</p>
+    </div>
+    </div>
+    <div class="working-step"><div class="arrow">------></div>
+  <div class="img-container j-image-container-3">
+    <div class="img-sub-container j-image-sub-container-3">
+    <img class="image1" src="img/social-media.png" >
+    <img class="image2" src="img/social-media (1).png">
+    </div>
+  </div>
+  <div class="image-about">
+    <p >Select Courses</p>
+    </div>
+    </div>
+    <div class="working-step"><div class="arrow"></div>
+  <div class="img-container j-image-container-4">
+    <div class="img-sub-container j-image-sub-container-4">
+    <img class="image1" src="img/cup.png" >
+    <img class="image2" src="img/cup (1).png">
+    </div>
+  </div>
+  <div class="image-about">
+    <p >Get Result</p>
+    </div>
+    </div>
+  </div>
+  <div class="end-working-content">
+<h2>A new innovation comes faster.</h2>
+<p> smooth registeration and a better Testing ability.</p>
+</div>
+      </div>
+    <div class="book-back-caption">
+      <div class="content-container">
+        <h2>We will provide a better platform to improve yourself.</h2>
+        <h3>we will be happy to help you.</h3>
+      </div>
+      <div class="register">
+        <a href="registered.php">  <button id="reg-btn"> Sign Up</button></a>
+       </div>
+    </div>
+    <div class="game">
+      <h2 class="article-heading">Our Best Courses</h2>
+<div class="article-container">
+  <div class="article-sub-container">
+    <div class="article-image-container">
+<img src="img/java.png">
+    </div>
+    <div class="article-content">
+
+<p>Java Langauge is one of the most commonly used programming language designed for use in the world of the Internet. This language is one of the fastest and the most reliable languages with features that are well suited on the World Wide Web (www). <br> It is believed that this programming language is running on more than 3 billion devices including smart-phones, ATMs, IoT, etc. Below are a few points to join Java training today:<br> </p>
+    </div>
+  </div>
+  <div class="article-sub-container">
+    <div class="article-image-container">
+        <img src="img/python.png">
+    </div>
+    <div class="article-content">
+<p>Python is an interpreted high-level general-purpose programming language. Python's design philosophy emphasizes code readability with its notable use of significant indentation. Its language constructs as well as its object-oriented approach aim to help programmers write clear, logical code for small and large-scale projects.<br>Python can serve as a scripting language for web applications, e.g., via mod_wsgi for the Apache web server. With Web Server Gateway Interface.</p>
+    </div>
+  </div>
+  <div class="article-sub-container">
+    <div class="article-image-container">
+        <img src="img/machine.png">
+    </div>
+    <div class="article-content">
+<p>Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention.</p>
+    </div>
+  </div>
+  <div class="article-sub-container">
+    <div class="article-image-container">
+        <img src="img/deep learning.jpg">
+    </div>
+    <div class="article-content">
+<p>Deep learning is an artificial intelligence (AI) function that imitates the workings of the human brain in processing data and creating patterns for use in decision making. Deep learning is a subset of machine learning in artificial intelligence that has networks capable of learning unsupervised from data that is unstructured or unlabeled. Also known as deep neural learning or deep neural network.</p>
+    </div>
+  </div>
+  <div class="article-sub-container">
+    <div class="article-image-container">
+        <img src="img/mysql.png">
+    </div>
+    <div class="article-content">
+<p>MySQL is the most popular Open Source Relational SQL Database Management System. MySQL is one of the best RDBMS being used for developing various web-based software applications. MySQL is developed, marketed and supported by MySQL AB, which is a Swedish company. </p>
+    </div>
+  </div>
+  <div class="article-sub-container">
+    <div class="article-image-container">
+        <img src="img/php.png">
+    </div>
+    <div class="article-content">
+<p>PHP is a server side scripting language. that is used to develop Static websites or Dynamic websites or Web applications. PHP stands for Hypertext Pre-processor, that earlier stood for Personal Home Pages. PHP scripts can only be interpreted on a server that has PHP installed.</p>
+    </div>
+  </div>
+</div>
+    </div>
+    <div class="footer">
+      <div class="social-icons">
+        
+        <div class="sub-social-icons">
+          <a href="#">
+        <i class="fa fa-facebook"></i>
+          </a>
+        </div>
+      </a>
+      </div>
+      <div class="social-icons">
+        
+        <div class="sub-social-icons">
+          <a href="#">
+        <i class="fa fa-instagram"></i>
+          </a>  
+      </div>
+      </a>
+      </div>
+      <div class="social-icons">
+        
+        <div class="sub-social-icons">
+          <a href="#">
+          <i class="fa fa-twitter"></i>
+        </a>
+        </div>
+      </a>
+      </div>
+      
+      <div class="copyright">
+<div class="copyright-content">
+  <p>copyright <i class="fa fa-copyright"></i>2023,All rights reserved.</p>
+  <p class="viewed"> This site is best viewed on screen having width more than 1024px.</p>
+</div>
+      </div>
+    </div>
+
+</body>
+</html>
